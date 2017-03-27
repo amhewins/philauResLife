@@ -1,0 +1,224 @@
+/* CSS document for 11/7/2016 */
+@import url(http://fonts.com/googleapis.com/css?family=Nunito);
+
+html {
+  height: 100%;
+  overflow: hidden;
+}
+h1 {
+  font-size: 250%;
+}
+p {
+  font-size: 140%;
+  color: #333;
+}
+body {
+  margin: 0px;
+  padding: 0px;
+  perspective: 1px;
+  transform-style: preserve-3d;
+  height: 100%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  font-family: 'Nunito';
+}
+.slide {
+  position: relative;
+  padding: 25vh 10%;
+  min-height: 100vh;
+  width: 100vw;
+  box-sizing: border-box;
+  transform-style: inherit;
+}
+.title a {
+  list-style-type: none;
+  text-decoration: none;
+  color: purple;
+}
+.title a:hover {
+  color: white;
+}
+.first {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  position: relative;
+  padding: 25vh 10%;
+  min-height: 100vh;
+  width: 100vw;
+  box-sizing: border-box;
+  transform-style: inherit;
+}
+.slide:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.title {
+  width: 50%;
+  padding: 5%;
+  border-radius: 5px;
+  background: rgba(240, 230, 220, 0.7);
+}
+.slide:nth-child(2n) .title {
+  margin-left: 0;
+  margin-right: auto;
+}
+.slide:nth-child(2n+1) .title {
+  margin-left: auto;
+  margin-right: 0;
+}
+.slide:before {
+  background: 50% 50% / cover;
+}
+.header {
+  text-align: center;
+  font-size: 150%;
+  color: #fff;
+  text-shadow: 0 2px 2px #000;
+}
+#title {
+  background-image: url(../images/ip-min.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#slide1:before {
+  background-image: url(../images/ronson.jpg);
+  transform: translateZ(-1px) scale(2);
+  z-index: -1;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#slide2 {
+  background-image: url(../images/fortess-min.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#slide3:before {
+  background-image: url(../images/partridge-min.jpg);
+  transform: translateZ(-1px) scale(2);
+  z-index: -1;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#slide4 {
+  background-image: url(../images/mott-min.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#slide5:before {
+  background-image: url(../images/scholler-min.jpg);
+  transform: translateZ(-1px) scale(2);
+  z-index: -1;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#slide6 {
+  background-image: url(../images/ip-min.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#slide7:before {
+  background-image: url(../images/townhouses-min.jpg);
+  transform: translateZ(-1px) scale(2);
+  z-index: -1;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#slide8 {
+  background-image: url(../images/falls-min.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.halls ul {
+    list-style-type: none;
+    margin: 0;
+    overflow: hidden;
+    background-color: #800000;
+}
+.halls li {
+    float: left;
+    padding-left: 2%;
+}
+.halls a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 8px 10px;
+    text-decoration: none;
+}
+.halls a:hover {
+    background-color: #111;
+}
+@media only screen and (max-width: 900px) {
+  .title {
+    font-size: 80%;
+    width: 55%;
+  }
+}
+@media only screen and (max-width: 830px) {
+  .title {
+    font-size: 80%;
+    width: 65%;
+  }
+  .non-mobile {
+    visibility: hidden;
+  }
+}
+@media only screen and (max-width: 745px) {
+  .title {
+    font-size: 80%;
+    width: 75%;
+  }
+  .non-mobile {
+    visibility: hidden;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .title {
+    font-size: 80%;
+    width: 85%;
+  }
+  .non-mobile {
+    visibility: hidden;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .title {
+    font-size: 80%;
+    width: 85%;
+  }
+  .halls ul {
+      list-style-type: none;
+      margin: 0;
+      overflow: hidden;
+      background-color: #800000;
+  }
+  .halls li {
+      float: left;
+  }
+  .halls a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding-left: ;
+      padding-right: ;
+      padding-top: ;
+      padding-bottom: ;
+      text-decoration: none;
+  }
+  .non-mobile {
+    visibility: hidden;
+  }
+}

@@ -1,0 +1,63 @@
+@import url(http://fonts.com/googleapis.com/css?family=Nunito);
+
+body {
+  margin: 0px;
+  background-color: white;
+  }
+.hero {
+  background-image: url('../images/fortess-min.jpg');
+  background-size: cover;
+  background-color: white;
+  height: 150%;
+  position: relative;
+  background-repeat: no-repeat;
+  margin: 0px;
+}
+.hero .overlay {
+  position: absolute;
+  margin-top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0);
+  color: #fff;
+}
+.overlay {
+  text-align: center;
+  font-size: 175%;
+  color: #fff;
+  text-shadow: 0 2px 2px #000;
+}
+.overlay h1 {
+  padding-top: 5%;
+}
+.overlay p {
+  margin-top: -10px;
+  font-size: 20px;
+}
+.overlay a {
+  color: white;
+  text-decoration: none;
+}
+.overlay a:hover {
+  color: #7c0426;
+}
+h1 {
+  font-family: 'Nunito';
+  font-size: 250%;
+}
+table {
+  margin-top: 20px;
+  text-shadow: none;
+}
+@media only screen and (max-width: 745px) {
+  .overlay p {
+    margin-top: -20px;
+    font-size: 20px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .overlay p {
+    margin-top: -10px;
+    font-size: 20px;
+  }
+}
